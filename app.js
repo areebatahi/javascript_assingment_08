@@ -59,8 +59,6 @@
 // function factorial(n) {
 //     if (n < 0) {
 //         return "Factorial is not defined for negative numbers"
-//     } else if (n === 0 || n === 1) {
-//         return 1;
 //     } else {
 //         var result = 1;
 //         for (var i = 2; i <= n; i++) {
@@ -82,14 +80,16 @@
 // counting();
 
 // 8.
-// function hyp() {
-//     var baseValue = +prompt("Enter a number for base");
-//     var perpendicularValue = +prompt("Enter a number for perpendicular");
-//     var hypoSquare = (baseValue * baseValue) + (perpendicularValue * perpendicularValue);
-//     var hypoValue = hypoSquare * hypoSquare;
-//     return hypoValue;
+// function calculatehypotenuse() {
+//     function calculateSquare(x) {
+//         return x * x;
+//     }
+//     var base = +prompt("Enter the base of a right angle triangle:");
+//     var perpendicular = +prompt("Enter the perpendicular of a right angle triangle:");
+//     var hypotenuse = Math.sqrt(calculateSquare(base) + calculateSquare(perpendicular));
+//     alert("The hypoteneus of right angle triangle with base " + base + " and perpendicular " + perpendicular + " is " + hypotenuse)
 // }
-// document.write(hyp());
+// calculatehypotenuse();
 
 // 9.
 // Method 1:
